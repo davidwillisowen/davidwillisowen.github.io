@@ -1,0 +1,3 @@
+[submodule "dwo.sh/themes/terminal"]
+	path = dwo.sh/themes/terminal
+	url = https://github.com/panr/hugo-theme-terminal.git
