@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on dwo.sh</title>
-    <link>/posts/</link>
-    <description>Recent content in Posts on dwo.sh</description>
+    <title>Hackthebox on dwo.sh</title>
+    <link>/tags/hackthebox/</link>
+    <description>Recent content in Hackthebox on dwo.sh</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>© David Willis-Owen</copyright>
-    <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>My First Professional Finding</title>
-      <link>/posts/my-first-professional-finding/</link>
-      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>/posts/my-first-professional-finding/</guid>
-      <description>&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260328194637.png&#34;&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Embarking On The OSCP</title>
-      <link>/posts/embarking-on-the-oscp/</link>
-      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>/posts/embarking-on-the-oscp/</guid>
-      <description>&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260317164353.png&#34;&gt;&lt;/p&gt;</description>
-    </item>
+    <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/hackthebox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shocker - HackTheBox</title>
       <link>/posts/shocker---hackthebox/</link>

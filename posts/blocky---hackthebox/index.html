@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Blocky - HackTheBox :: dwo.sh</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/blocky---hackthebox/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/extended.min.9f2900d1abbf8230ea58db511e896e7c56cfd8580ba8ced694f185c3c7b61843.css">
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+<link rel="stylesheet" href="/terminal.css">
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Blocky - HackTheBox">
+<meta property="og:description" content="
+" />
+<meta property="og:url" content="/posts/blocky---hackthebox/" />
+<meta property="og:site_name" content="dwo.sh" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2026-01-14 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    dwo.sh
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/">home</a></li>
+        
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+        
+          <li><a href="/whoami">whoami</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/" >home</a></li>
+        
+      
+        
+          <li><a href="/about" >about</a></li>
+        
+      
+        
+          <li><a href="/whoami" >whoami</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/blocky---hackthebox/">Blocky - HackTheBox</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-01-14</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/hackthebox/">hackthebox</a>&nbsp;
+      
+      #<a href="/tags/linux/">linux</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p><img alt="Image Description" src="/images/Pasted%20image%2020260114113504.png"></p>
+<h2 id="enumeration">Enumeration<a href="#enumeration" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>To begin the lab, I&rsquo;m going to open my .bashrc file with vim and assign the target ip (10.129.72.248) to the IP variable, so I can reference it throughout the lab.</p>
+<p>With that being done, let&rsquo;s run a standard nmap scan against the app. The guide references FTP, so I&rsquo;ll pay particular attention to that:</p>
+<pre tabindex="0"><code>david@red:~$ nmap -v -sVC $IP
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-14 11:39 GMT
+NSE: Loaded 156 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 11:39
+Completed NSE at 11:39, 0.00s elapsed
+Initiating NSE at 11:39
+Completed NSE at 11:39, 0.00s elapsed
+Initiating NSE at 11:39
+Completed NSE at 11:39, 0.00s elapsed
+Initiating Ping Scan at 11:39
+Scanning 10.129.72.248 [2 ports]
+Completed Ping Scan at 11:39, 0.02s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 11:39
+Completed Parallel DNS resolution of 1 host. at 11:39, 0.02s elapsed
+Initiating Connect Scan at 11:39
+Scanning 10.129.72.248 [1000 ports]
+Discovered open port 80/tcp on 10.129.72.248
+Discovered open port 21/tcp on 10.129.72.248
+Discovered open port 22/tcp on 10.129.72.248
+Completed Connect Scan at 11:39, 5.41s elapsed (1000 total ports)
+Initiating Service scan at 11:39
+Scanning 3 services on 10.129.72.248
+Completed Service scan at 11:42, 194.33s elapsed (3 services on 1 host)
+NSE: Script scanning 10.129.72.248.
+Initiating NSE at 11:42
+Completed NSE at 11:42, 17.19s elapsed
+Initiating NSE at 11:42
+Completed NSE at 11:43, 43.64s elapsed
+Initiating NSE at 11:43
+Completed NSE at 11:43, 0.00s elapsed
+Nmap scan report for 10.129.72.248
+Host is up (0.027s latency).
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE  SERVICE VERSION
+21/tcp   open   ftp?
+22/tcp   open   ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 d6:2b:99:b4:d5:e7:53:ce:2b:fc:b5:d7:9d:79:fb:a2 (RSA)
+|   256 5d:7f:38:95:70:c9:be:ac:67:a0:1e:86:e7:97:84:03 (ECDSA)
+|_  256 09:d5:c2:04:95:1a:90:ef:87:56:25:97:df:83:70:67 (ED25519)
+80/tcp   open   http    Apache httpd 2.4.18
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+8192/tcp closed sophos
+Service Info: Host: 127.0.1.1; OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+NSE: Script Post-scanning.
+Initiating NSE at 11:43
+Completed NSE at 11:43, 0.00s elapsed
+Initiating NSE at 11:43
+Completed NSE at 11:43, 0.00s elapsed
+Initiating NSE at 11:43
+Completed NSE at 11:43, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 260.78 seconds
+</code></pre><p>Ok, the scan mentioned that FTP is running, but it didn&rsquo;t give me the name of the software running on it. I&rsquo;ll quickly Google FTP enumeration, then pivot to an nmap script scan if needed.</p>
+<p>We can just connect (ignore the <code>status</code> command, it wasn&rsquo;t needed. We also didn&rsquo;t need to use the anonymous user).</p>
+<pre tabindex="0"><code>david@red:~$ ftp anonymous@$IP
+Connected to 10.129.72.248.
+status
+220 ProFTPD 1.3.5a Server (Debian) [::ffff:10.129.72.248]
+</code></pre><p>Nice - so ProFTPD is being used. Next, I&rsquo;m going to check out the server running on port 80 through my browser, and look for any credentials.</p>
+<p>By snooping around, I found an rss file, containing the username notch:</p>
+<pre tabindex="0"><code>&lt;rss version=&#34;2.0&#34;&gt;
+&lt;channel&gt;
+&lt;title&gt;BlockyCraft&lt;/title&gt;
+&lt;atom:link href=&#34;http://blocky.htb/index.php/feed/&#34; rel=&#34;self&#34; type=&#34;application/rss+xml&#34;/&gt;
+&lt;link&gt;http://blocky.htb&lt;/link&gt;
+&lt;description&gt;Under Construction!&lt;/description&gt;
+&lt;lastBuildDate&gt;Mon, 03 Jul 2017 00:28:31 +0000&lt;/lastBuildDate&gt;
+&lt;language&gt;en-US&lt;/language&gt;
+&lt;sy:updatePeriod&gt;hourly&lt;/sy:updatePeriod&gt;
+&lt;sy:updateFrequency&gt;1&lt;/sy:updateFrequency&gt;
+&lt;generator&gt;https://wordpress.org/?v=4.8&lt;/generator&gt;
+&lt;item&gt;
+&lt;title&gt;Welcome to BlockyCraft!&lt;/title&gt;
+&lt;link&gt;
+http://blocky.htb/index.php/2017/07/02/welcome-to-blockycraft/
+&lt;/link&gt;
+&lt;comments&gt;
+http://blocky.htb/index.php/2017/07/02/welcome-to-blockycraft/#respond
+&lt;/comments&gt;
+&lt;pubDate&gt;Sun, 02 Jul 2017 23:51:05 +0000&lt;/pubDate&gt;
+&lt;dc:creator&gt;Notch&lt;/dc:creator&gt;
+&lt;category&gt;Uncategorized&lt;/category&gt;
+&lt;guid isPermaLink=&#34;false&#34;&gt;http://192.168.2.70/?p=5&lt;/guid&gt;
+&lt;description&gt;
+Welcome everyone. The site and server are still under construction so don&amp;#8217;t expect too much right now! We are currently developing a wiki system for the server and a core plugin to track player stats and stuff. Lots of great stuff planned for the future 🙂
+&lt;/description&gt;
+&lt;content:encoded&gt;
+&lt;p&gt;Welcome everyone. The site and server are still under construction so don&amp;#8217;t expect too much right now!&lt;/p&gt; &lt;p&gt;We are currently developing a wiki system for the server and a core plugin to track player stats and stuff. Lots of great stuff planned for the future &lt;img src=&#34;https://s.w.org/images/core/emoji/2.3/72x72/1f642.png&#34; alt=&#34;🙂&#34; class=&#34;wp-smiley&#34; style=&#34;height: 1em; max-height: 1em;&#34; /&gt;&lt;/p&gt;
+&lt;/content:encoded&gt;
+&lt;wfw:commentRss&gt;
+http://blocky.htb/index.php/2017/07/02/welcome-to-blockycraft/feed/
+&lt;/wfw:commentRss&gt;
+&lt;slash:comments&gt;0&lt;/slash:comments&gt;
+&lt;/item&gt;
+&lt;/channel&gt;
+</code></pre><p>Next, the guide next tells me to find a relative path on the webserver offering JAR files for download.</p>
+<p>I&rsquo;ll start with Gobuster:</p>
+<pre tabindex="0"><code>david@red:~/Pentest/scripts$ gobuster dir -u http://$IP:80 -w ~/Pentest/wordlists/big.txt
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) &amp; Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.129.72.248:80
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/david/Pentest/wordlists/big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+
+Error: the server returns a status code that matches the provided options for non existing urls. http://10.129.72.248:80/39fe4b66-8c1f-425d-b7f1-c01eab6742e6 =&gt; 302 (Length: 280). To continue please exclude the status code or the length
+david@red:~/Pentest/scripts$ 
+</code></pre><p>Looks like the server is returning 302 for a fake url&hellip; I wonder why? To start, let&rsquo;s try filtering out all 302&rsquo;s. We can do this with <code>-b 302</code> (new technique for me).</p>
+<pre tabindex="0"><code>david@red:~/Pentest/scripts$ gobuster dir -u http://$IP:80 -w ~/Pentest/wordlists/big.txt -b 302
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) &amp; Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.129.72.248:80
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/david/Pentest/wordlists/big.txt
+[+] Negative Status codes:   302
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+Progress: 20469 / 20470 (100.00%)
+===============================================================
+Finished
+===============================================================
+</code></pre><p>Brutal - nothing. I tried visiting a fake url in my web browser, and I received a standard 404. Why? Is it something to do with the ip redirecting to the domain name? I&rsquo;ll ask an LLM&hellip;</p>
+<p>Yup, the server redirects the ip request to the domain name. Nice.</p>
+<p>Let&rsquo;s see the output from the next gobuster usage, querying the server via its domain name and removing the 302 skip logic:</p>
+<pre tabindex="0"><code>david@red:~/Pentest/scripts$ gobuster dir -u http://blocky.htb -w ~/Pentest/wordlists/big.txt
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) &amp; Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://blocky.htb
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/david/Pentest/wordlists/big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+/.htpasswd            (Status: 403) [Size: 294]
+/.htaccess            (Status: 403) [Size: 294]
+/javascript           (Status: 301) [Size: 313] [--&gt; http://blocky.htb/javascript/]
+/phpmyadmin           (Status: 301) [Size: 313] [--&gt; http://blocky.htb/phpmyadmin/]
+/plugins              (Status: 301) [Size: 310] [--&gt; http://blocky.htb/plugins/]
+/server-status        (Status: 403) [Size: 298]
+/wiki                 (Status: 301) [Size: 307] [--&gt; http://blocky.htb/wiki/]
+/wp-admin             (Status: 301) [Size: 311] [--&gt; http://blocky.htb/wp-admin/]
+/wp-content           (Status: 301) [Size: 313] [--&gt; http://blocky.htb/wp-content/]
+/wp-includes          (Status: 301) [Size: 314] [--&gt; http://blocky.htb/wp-includes/]
+Progress: 20469 / 20470 (100.00%)
+===============================================================
+Finished
+===============================================================
+</code></pre><p>Visiting plugins&hellip;</p>
+<p><img alt="Image Description" src="/images/Pasted%20image%2020260114121105.png"></p>
+<p>OH YEAH!</p>
+<h2 id="initial-foothold">Initial Foothold<a href="#initial-foothold" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>I&rsquo;m going to download the files and crack them open, aggressively looking for creds.</p>
+<p>.jar files are basically zips of code. I&rsquo;m going to dump them into an online decompiler&hellip;</p>
+<p>After a bit of digging, I found this in the BlockCore.jar. I searched this first since the other .jar file was far larger and looked to be third party:</p>
+<p><img alt="Image Description" src="/images/Pasted%20image%2020260114122733.png"></p>
+<p>I tried using this for the user notch over ssh, and&hellip;</p>
+<pre tabindex="0"><code>david@red:~/Pentest/tools/jadx$ ssh notch@$IP
+The authenticity of host &#39;10.129.72.248 (10.129.72.248)&#39; can&#39;t be established.
+ED25519 key fingerprint is SHA256:ZspC3hwRDEmd09Mn/ZlgKwCv8I8KDhl9Rt2Us0fZ0/8.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? Yes
+Warning: Permanently added &#39;10.129.72.248&#39; (ED25519) to the list of known hosts.
+notch@10.129.72.248&#39;s password: 
+Welcome to Ubuntu 16.04.2 LTS (GNU/Linux 4.4.0-62-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+7 packages can be updated.
+7 updates are security updates.
+
+
+Last login: Fri Jul  8 07:24:50 2022 from 10.10.14.29
+To run a command as administrator (user &#34;root&#34;), use &#34;sudo &lt;command&gt;&#34;.
+See &#34;man sudo_root&#34; for details.
+</code></pre><p>VOILA!</p>
+<h2 id="privesc">Privesc<a href="#privesc" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>This is too easy&hellip;</p>
+<p>Running <code>whoami</code> reveals that notch belongs to the sudo group. Can I just <code>sudo su</code> with notch&rsquo;s password?</p>
+<pre tabindex="0"><code>notch@Blocky:~$ whoami; id
+notch
+uid=1000(notch) gid=1000(notch) groups=1000(notch),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),110(lxd),115(lpadmin),116(sambashare)
+notch@Blocky:~$ sudo su
+root@Blocky:/home/notch# cd /root
+root@Blocky:~# ls
+root.txt
+root@Blocky:~# cat root.txt
+129e35c698e559ab048b10efcf425e8e
+</code></pre><p>Christmas has come early!!! Wow. I guess the tricky part was the directory enumeration.</p>
+<h2 id="reflection">Reflection<a href="#reflection" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>I did REALLY WELL to analyse why my Gobuster scan wasn&rsquo;t working. Reading the &ndash;help documentation is massively underrated.</li>
+<li>Privesc was too easy here&hellip;</li>
+<li>Nice job overall. Honestly, the only improvement to make is improved familiarity with common tools like Gobuster. On to the next one.</li>
+</ul>
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/ransom-part-1---hackthebox/" class="button inline prev">
+        &lt; [<span class="button__text">Ransom Part 1 - HackTheBox</span>]
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/broker---hackthebox/" class="button inline next">
+         [<span class="button__text">Broker - HackTheBox</span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© David Willis-Owen</span>
+    
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

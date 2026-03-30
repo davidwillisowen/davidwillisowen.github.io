@@ -4,23 +4,73 @@
     <title>dwo.sh</title>
     <link>/</link>
     <description>Recent content on dwo.sh</description>
-    <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 06 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© David Willis-Owen</copyright>
+    <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Post 1</title>
-      <link>/posts/hello-world/</link>
-      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/hello-world/</guid>
-      <description>&lt;p&gt;Hello, World!&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Test codeblock&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;!&lt;img src=&#34;/images/Pasted%20image%2020260109155857.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <title>My First Professional Finding</title>
+      <link>/posts/my-first-professional-finding/</link>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/my-first-professional-finding/</guid>
+      <description>&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260328194637.png&#34;&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>TESTING NEW IMAGE</title>
-      <link>/posts/test-new-image/</link>
-      <pubDate>Wed, 06 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/test-new-image/</guid>
-      <description>&lt;p&gt;Hello, World!&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Test codeblock&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;!&lt;img src=&#34;/images/Pasted%20image%2020260111174039.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <title>Embarking On The OSCP</title>
+      <link>/posts/embarking-on-the-oscp/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/embarking-on-the-oscp/</guid>
+      <description>&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260317164353.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shocker - HackTheBox</title>
+      <link>/posts/shocker---hackthebox/</link>
+      <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/shocker---hackthebox/</guid>
+      <description>&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260120161129.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ransom Part 2 - HackTheBox</title>
+      <link>/posts/ransom-part-2---hackthebox/</link>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/ransom-part-2---hackthebox/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260116094520.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ransom Part 1 - HackTheBox</title>
+      <link>/posts/ransom-part-1---hackthebox/</link>
+      <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/ransom-part-1---hackthebox/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260116094520.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Blocky - HackTheBox</title>
+      <link>/posts/blocky---hackthebox/</link>
+      <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/blocky---hackthebox/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260114113504.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Broker - HackTheBox</title>
+      <link>/posts/broker---hackthebox/</link>
+      <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/broker---hackthebox/</guid>
+      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260112112319.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/about/</guid>
+      <description>$ about This Weblog is solely focused on offensive security learning. I am using it to build a &amp;ldquo;second brain&amp;rdquo;, cataloguing my notes and train of thought as I understand more things. Once I become good enough, I will catalogue novel attack paths I create!&#xA;As of the time of writing, I am working through HackTheBox and PortSwigger labs - industry-standard, practical environments to hone hacking skills. I am looking to take my OSCP by the end of 2026, and I will share my journey here as well.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>/whoami/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/whoami/</guid>
+      <description>$ whoami I&amp;rsquo;m David Willis-Owen, a UK-based Cybersecurity professional. I started working at 18 as a Technology Degree Apprentice for a global bank, and after graduating as Valedictorian, I moved into a Penetration Tester role.&#xA;This is me:&#xA;Offensive Security is my passion! I love learning about attack techniques, especially in a practical way. This doesn&amp;rsquo;t feel like work for me, and I&amp;rsquo;m truly blessed that my passion is my job.</description>
     </item>
   </channel>
 </rss>

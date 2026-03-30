@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oscp on dwo.sh</title>
+    <link>/tags/oscp/</link>
+    <description>Recent content in Oscp on dwo.sh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© David Willis-Owen</copyright>
+    <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/oscp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Embarking On The OSCP</title>
+      <link>/posts/embarking-on-the-oscp/</link>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/embarking-on-the-oscp/</guid>
+      <description>&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260317164353.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

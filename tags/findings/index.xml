@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Findings on dwo.sh</title>
+    <link>/tags/findings/</link>
+    <description>Recent content in Findings on dwo.sh</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>© David Willis-Owen</copyright>
+    <lastBuildDate>Sat, 28 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/findings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My First Professional Finding</title>
+      <link>/posts/my-first-professional-finding/</link>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>/posts/my-first-professional-finding/</guid>
+      <description>&lt;p&gt;!&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260328194637.png&#34;&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
