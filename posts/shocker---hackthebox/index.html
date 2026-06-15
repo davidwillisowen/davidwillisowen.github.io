@@ -241,12 +241,12 @@ Starting gobuster in directory enumeration mode
 /cgi-bin/             (Status: 403) [Size: 295]
 /server-status        (Status: 403) [Size: 300]
 </code></pre><p>The guide is hinting that I need to find a file in cgi-bin. I&rsquo;ll crack it open in Burp Suite and fiddle with some HTTP Headers/Params. Failing that, we can brute force for common file names. Let&rsquo;s give it a shot!</p>
-<p>!<img alt="Image Description" src="/images/Pasted%20image%2020260120162612.png"></p>
+<p><img alt="Image Description" src="/images/Pasted%20image%2020260120162612.png"></p>
 <p>I don&rsquo;t see much in this request! Next, I&rsquo;m going to look up &ldquo;fuzzing cgi-bin&rdquo; and &ldquo;common files in cgi-bin&rdquo; as a different avenue</p>
 <p>Ok, so nothing jumps out. I&rsquo;m going to try out <code>ffuf -u http://$IP/cgi-bin/FUZZ.sh -w big.txt</code> to see if I can brute force a script&hellip;</p>
-<p>!<img alt="Image Description" src="/images/Pasted%20image%2020260120163216.png"></p>
+<p><img alt="Image Description" src="/images/Pasted%20image%2020260120163216.png"></p>
 <p>No way&hellip; is there a user.sh script?</p>
-<p>!<img alt="Image Description" src="/images/Pasted%20image%2020260120163323.png"></p>
+<p><img alt="Image Description" src="/images/Pasted%20image%2020260120163323.png"></p>
 <p>Oh yes there is! This appears to be the output from using the <code>uptime</code> command in Unix.</p>
 <h2 id="initial-foothold">Initial Foothold<a href="#initial-foothold" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Next, we&rsquo;re going to look for any CVEs related to CGI-bin.</p>

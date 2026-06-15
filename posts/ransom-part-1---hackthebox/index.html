@@ -229,7 +229,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 Nmap done: 1 IP address (1 host up) scanned in 10.35 seconds
 </code></pre><p>Only 2 ports are open - 80, and 22. So this will likely require some kind of web exploitation, letting us achieve RCE or grab a credential to use via SSH later.</p>
 <p>I&rsquo;ll check the website out manually to gain an understanding on what its purpose is and the core technologies it uses.</p>
-<p>!<img alt="Image Description" src="/images/Pasted%20image%2020260116100203.png"></p>
+<p><img alt="Image Description" src="/images/Pasted%20image%2020260116100203.png"></p>
 <p>Interesting. My gut instinct is to run a directory enumeration to check for other endpoints, examine the HTTP Request for any interesting logic, and look for any CVE&rsquo;s associated with the underlying framework. The guide asks me to provide the PHP framework used, which is laravel (found by the cookie name of laravel_session).</p>
 <p>Next, the guide prompts me to look at the <code>/api/login</code> request associated with the login button. The endpoint only accepts GET requests, but it can read the password parameter from JSON. Let&rsquo;s try getting a working request - then based on errors, we can try simple things like <code>*</code> or <code>null</code>, followed by more in-depth PHP login flaw research.</p>
 <p>I got a working request using a Content-Type of <code>application/json</code>, and making a request with <code>{&quot;password&quot;: &quot;x&quot;}</code>. Hmm&hellip;</p>
@@ -270,7 +270,7 @@ Finished
 david@red:~/Pentest/scripts$ 
 </code></pre><p>First, visiting cgi-bin&hellip; it brings back a 404.</p>
 <p>Next, visiting register&hellip;</p>
-<p>!<img alt="Image Description" src="/images/Pasted%20image%2020260116103254.png"></p>
+<p><img alt="Image Description" src="/images/Pasted%20image%2020260116103254.png"></p>
 <p>Intriguing.</p>
 <p>I also see this part in the <code>Request</code> section:</p>
 <pre tabindex="0"><code>### Session
@@ -332,7 +332,7 @@ So the comparison becomes:
 <p>The developer made some flaws&hellip; first, they were not strict about how the password is sent to the server, letting a default config or lax policy allow JSON. Next, they assumed only strings could be sent, via the password URL parameter, so they didn&rsquo;t bother to add type juggling security checks. However, JSON lets you send booleans over HTTP.</p>
 <h2 id="initial-foothold-1">Initial Foothold<a href="#initial-foothold-1" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Now, we have access to the website. We are greeted with 2 downloadable files - one of which is the user flag:</p>
-<p>!<img alt="Image Description" src="/images/Pasted%20image%2020260116133408.png"></p>
+<p><img alt="Image Description" src="/images/Pasted%20image%2020260116133408.png"></p>
 <p>Downloading the <code>homedirectory.zip</code> file reveals that it is encrypted.</p>
 <p>The guide prompts us to figure out the type of encryption that was used. We can install 7zip and run it to view metadata about a zip file:</p>
 <pre tabindex="0"><code>david@red:~/Downloads/ransom$ 7z l -slt uploaded-file-3422.zip 

