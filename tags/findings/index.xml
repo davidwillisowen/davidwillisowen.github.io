@@ -14,7 +14,7 @@
       <link>/posts/my-first-professional-finding/</link>
       <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
       <guid>/posts/my-first-professional-finding/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260328194637.png&#34;&gt;&lt;/p&gt;</description>
+      <description>After 8 weeks as a professional penetration tester, I finally achieved my first finding - a high severity vulnerability that led to an escalated incident. While I have found a few vulnerabilities in the past via responsible disclosure programs before getting a penetration testing job, it feels incredibly validating to succeed in a professional context!&#xA;I want to discuss my thought process, so I can teach other people what works and for personal reference in the future.</description>
     </item>
   </channel>
 </rss>

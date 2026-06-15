@@ -6,8 +6,8 @@
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="
-" />
+<meta name="description" content="Enumeration Let&amp;rsquo;s start with a simple port scan:
+nmap -sC -sV -v 10.129.230.87 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0) | ssh-hostkey: | 256 3e:ea:45:4b:c5:d1:6d:6f:e2:d4:d1:3b:0a:3d:a9:4f (ECDSA) |_ 256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 (ED25519) 80/tcp open http nginx 1.18.0 (Ubuntu) | http-auth: | HTTP/1.1 401 Unauthorized\x0D |_ basic realm=ActiveMQRealm |_http-title: Error 401 Unauthorized |_http-server-header: nginx/1.18.0 (Ubuntu) Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel I am looking for an ActiveMQ service, which wasn&amp;rsquo;t revealed by this scan." />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
@@ -19,7 +19,7 @@
 
 
   
-  <link rel="stylesheet" href="/css/extended.min.39fe80170ac2e95bfb66c1ff64a6cd898e9fba406bdb77ed0f3a1e2ab294dde3.css">
+  <link rel="stylesheet" href="/css/extended.min.d4b9bf7ff816e1852fd48e4c457d45627f2474bd259c297a9f1bb3b50289d026.css">
 
   
   <link rel="stylesheet" href="/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
@@ -82,8 +82,8 @@
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Broker - HackTheBox">
-<meta property="og:description" content="
-" />
+<meta property="og:description" content="Enumeration Let&amp;rsquo;s start with a simple port scan:
+nmap -sC -sV -v 10.129.230.87 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0) | ssh-hostkey: | 256 3e:ea:45:4b:c5:d1:6d:6f:e2:d4:d1:3b:0a:3d:a9:4f (ECDSA) |_ 256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 (ED25519) 80/tcp open http nginx 1.18.0 (Ubuntu) | http-auth: | HTTP/1.1 401 Unauthorized\x0D |_ basic realm=ActiveMQRealm |_http-title: Error 401 Unauthorized |_http-server-header: nginx/1.18.0 (Ubuntu) Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel I am looking for an ActiveMQ service, which wasn&amp;rsquo;t revealed by this scan." />
 <meta property="og:url" content="/posts/broker---hackthebox/" />
 <meta property="og:site_name" content="dwo.sh" />
 
@@ -197,8 +197,7 @@
   
 
   <div class="post-content"><div>
-        <p><img alt="Image Description" src="/images/Pasted%20image%2020260112112319.png"></p>
-<h2 id="enumeration">Enumeration<a href="#enumeration" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+        <h2 id="enumeration">Enumeration<a href="#enumeration" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>Let&rsquo;s start with a simple port scan:</p>
 <pre tabindex="0"><code>nmap -sC -sV -v 10.129.230.87
 

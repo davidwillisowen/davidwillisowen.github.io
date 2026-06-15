@@ -14,49 +14,49 @@
       <link>/posts/my-first-professional-finding/</link>
       <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
       <guid>/posts/my-first-professional-finding/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260328194637.png&#34;&gt;&lt;/p&gt;</description>
+      <description>After 8 weeks as a professional penetration tester, I finally achieved my first finding - a high severity vulnerability that led to an escalated incident. While I have found a few vulnerabilities in the past via responsible disclosure programs before getting a penetration testing job, it feels incredibly validating to succeed in a professional context!&#xA;I want to discuss my thought process, so I can teach other people what works and for personal reference in the future.</description>
     </item>
     <item>
       <title>Embarking On The OSCP</title>
       <link>/posts/embarking-on-the-oscp/</link>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
       <guid>/posts/embarking-on-the-oscp/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260317164353.png&#34;&gt;&lt;/p&gt;</description>
+      <description>Hi, David here. It&amp;rsquo;s been too long!&#xA;At the start of February, I officially started full time as a Penetration Tester. The job is great, and I&amp;rsquo;m enjoying it&amp;hellip; but I&amp;rsquo;m not fully IMMERSED yet.&#xA;Why is that? Well, I&amp;rsquo;ve been continuing with AI Security projects on the side. I think AI Security is very important, and there&amp;rsquo;s definitely room to make a lot of money. BUT, I want to focus back on becoming an Offensive Security expert.</description>
     </item>
     <item>
       <title>Shocker - HackTheBox</title>
       <link>/posts/shocker---hackthebox/</link>
       <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
       <guid>/posts/shocker---hackthebox/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260120161129.png&#34;&gt;&lt;/p&gt;</description>
+      <description>Introduction In the last post, I struggled to complete Ransom - a Medium difficulty HackTheBox lab. While I made some good progress, I feel that it&amp;rsquo;s slightly above my current skill level. This time I&amp;rsquo;m trying a mid-difficulty lab within the Easy difficulty tier. Let&amp;rsquo;s see how it goes!&#xA;Enumeration Let&amp;rsquo;s start with our boilerplate port scan, saved to a custom bash script called port_enum this time (nmap with the -sV and -sC flags set):</description>
     </item>
     <item>
       <title>Ransom Part 2 - HackTheBox</title>
       <link>/posts/ransom-part-2---hackthebox/</link>
       <pubDate>Fri, 16 Jan 2026 00:00:00 +0000</pubDate>
       <guid>/posts/ransom-part-2---hackthebox/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260116094520.png&#34;&gt;&lt;/p&gt;</description>
+      <description>Introduction Part 1 of ransom was HARD. With that being said, the only stage I had severe difficulty with was the poorly documented bkcrack tool. Hopefully, I can escalate privileges without peeking at the solutions&amp;hellip; let&amp;rsquo;s do this!&#xA;Logging in We are currently at the stage where we have an unzipped copy of a home directory, containing an ssh key.&#xA;Inspecting the id_rsa.pub file, we find a username at the end of it:</description>
     </item>
     <item>
       <title>Ransom Part 1 - HackTheBox</title>
       <link>/posts/ransom-part-1---hackthebox/</link>
       <pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate>
       <guid>/posts/ransom-part-1---hackthebox/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260116094520.png&#34;&gt;&lt;/p&gt;</description>
+      <description>Introduction I have found writing up these HackTheBox labs immensely satisfying, especially through the medium of a pseudo-private blog in dwo.sh. One surprising benefit is that my aptitude has seemingly grown in a short space of time.&#xA;I believe this is because I have a tendency to rush when completing offensive security exercises - writing my thoughts before I execute forces the analytical side of my brain to engage.&#xA;With that being said, I am attempting my first ever Medium level lab.</description>
     </item>
     <item>
       <title>Blocky - HackTheBox</title>
       <link>/posts/blocky---hackthebox/</link>
       <pubDate>Wed, 14 Jan 2026 00:00:00 +0000</pubDate>
       <guid>/posts/blocky---hackthebox/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260114113504.png&#34;&gt;&lt;/p&gt;</description>
+      <description>Enumeration To begin the lab, I&amp;rsquo;m going to open my .bashrc file with vim and assign the target ip (10.129.72.248) to the IP variable, so I can reference it throughout the lab.&#xA;With that being done, let&amp;rsquo;s run a standard nmap scan against the app. The guide references FTP, so I&amp;rsquo;ll pay particular attention to that:&#xA;david@red:~$ nmap -v -sVC $IP Starting Nmap 7.94SVN ( https://nmap.org ) at 2026-01-14 11:39 GMT NSE: Loaded 156 scripts for scanning.</description>
     </item>
     <item>
       <title>Broker - HackTheBox</title>
       <link>/posts/broker---hackthebox/</link>
       <pubDate>Mon, 12 Jan 2026 00:00:00 +0000</pubDate>
       <guid>/posts/broker---hackthebox/</guid>
-      <description>&lt;p&gt;&lt;img alt=&#34;Image Description&#34; src=&#34;/images/Pasted%20image%2020260112112319.png&#34;&gt;&lt;/p&gt;</description>
+      <description>Enumeration Let&amp;rsquo;s start with a simple port scan:&#xA;nmap -sC -sV -v 10.129.230.87 PORT STATE SERVICE VERSION 22/tcp open ssh OpenSSH 8.9p1 Ubuntu 3ubuntu0.4 (Ubuntu Linux; protocol 2.0) | ssh-hostkey: | 256 3e:ea:45:4b:c5:d1:6d:6f:e2:d4:d1:3b:0a:3d:a9:4f (ECDSA) |_ 256 64:cc:75:de:4a:e6:a5:b4:73:eb:3f:1b:cf:b4:e3:94 (ED25519) 80/tcp open http nginx 1.18.0 (Ubuntu) | http-auth: | HTTP/1.1 401 Unauthorized\x0D |_ basic realm=ActiveMQRealm |_http-title: Error 401 Unauthorized |_http-server-header: nginx/1.18.0 (Ubuntu) Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel I am looking for an ActiveMQ service, which wasn&amp;rsquo;t revealed by this scan.</description>
     </item>
   </channel>
 </rss>
